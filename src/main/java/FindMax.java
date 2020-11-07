@@ -26,5 +26,16 @@ public class FindMax {
 		return max;
 	}
 
+	//Function for cheking String value
+	public String checkStringmax(String firstValue, String secondValue, String thirdValue) {
+		String max = firstValue;
+		if (secondValue.compareTo(max) > 0) {
+			max = secondValue;
+		}
+		if (thirdValue.compareTo(max) > 0) {
+			max = thirdValue;
+		}
+		return max;
+	}
 }
 

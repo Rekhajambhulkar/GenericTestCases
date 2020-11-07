@@ -62,4 +62,30 @@ public class GenericTestClass {
 		Assert.assertEquals(thirdValue, max);
 	}
 
+	// Test case for greatest String FirstValue
+	@Test
+	public void FirstMaximumStringValue_FirstPosition() {
+		FindMax main = new FindMax();
+		String firstValue = "Apple", secondValue = "Peach", thirdValue = "Banana";
+		String max = main.checkStringmax(firstValue, secondValue, thirdValue);
+		Assert.assertEquals(firstValue, max);
+	}
+
+	// Test case for greatest String Second
+	@Test
+	public void secondMaximumStringValue_SecondtPosition() {
+		FindMax main = new FindMax();
+		String firstValue = "Banana", secondValue = "Apple", thirdValue = "Peach";
+		String max = main.checkStringmax(firstValue, secondValue, thirdValue);
+		Assert.assertEquals(secondValue, max);
+	}
+
+	// Test case for greatest String ThirdValue
+	@Test
+	public void thirdMaximumStringValue_ThirdPosition() {
+		FindMax main = new FindMax();
+		String firstValue = "Banana", secondValue = "Peach", thirdValue = "Apple";
+		String max = main.checkStringmax(firstValue, secondValue, thirdValue);
+		Assert.assertEquals(thirdValue, max);
+	}
 }
