@@ -1,7 +1,9 @@
 package com.generictest;
 
 public class FindMax {
-	public Integer checkMaximum(Integer firstValue, Integer secondValue, Integer thirdValue) {
+	
+	//Function for check Maximum Integer value
+	public Integer checkIntmax(Integer firstValue, Integer secondValue, Integer thirdValue) {
 		Integer max = firstValue;
 		if (secondValue.compareTo(max) > 0) {
 			max = secondValue;
@@ -11,5 +13,18 @@ public class FindMax {
 		}
 		return max;
 	}
+
+	//Function for check Maximum float value
+	public Float checkFloatmax(Float firstValue, Float secondValue, Float thirdValue) {
+		Float max = firstValue;
+		if (secondValue.compareTo(max) > 0) {
+			max = secondValue;
+		}
+		if (thirdValue.compareTo(max) > 0) {
+			max = thirdValue;
+		}
+		return max;
+	}
+
 }
 
