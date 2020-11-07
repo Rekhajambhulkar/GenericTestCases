@@ -11,7 +11,7 @@ public class GenericTestClass {
 	public void FirstMaximumValueFirstPosition() {
 		Integer firstValue = 40, secondValue = 30, thirdValue = 25;
 		FindMax main = new FindMax();
-		Integer max = main.checkIntmax(firstValue, secondValue, thirdValue);
+		Integer max = main.checkMax(firstValue, secondValue, thirdValue);
 		Assert.assertEquals(firstValue, max);
 	}
 
@@ -20,7 +20,7 @@ public class GenericTestClass {
 	public void FirstMaximumValueSecondValue() {
 		FindMax main = new FindMax();
 		Integer firstValue = 20, secondValue = 30, thirdValue = 25;
-		Integer max = main.checkIntmax(firstValue, secondValue, thirdValue);
+		Integer max = main.checkMax(firstValue, secondValue, thirdValue);
 		Assert.assertEquals(secondValue, max);
 
 	}
@@ -30,7 +30,7 @@ public class GenericTestClass {
 	public void FirstMaximumValueThirddValue() {
 		FindMax main = new FindMax();
 		Integer firstValue = 20, secondValue = 30, thirdValue = 35;
-		Integer max = main.checkIntmax(firstValue, secondValue, thirdValue);
+		Integer max = main.checkMax(firstValue, secondValue, thirdValue);
 		Assert.assertEquals(thirdValue, max);
 
 	}
@@ -40,7 +40,7 @@ public class GenericTestClass {
 	public void FirstMaximumFloatValue_FirstPosition() {
 		FindMax main = new FindMax();
 		Float firstValue = 5.6f, secondValue = 2.5f, thirdValue = 3.5f;
-		Float max = main.checkFloatmax(firstValue, secondValue, thirdValue);
+		Float max = main.checkMax(firstValue, secondValue, thirdValue);
 		Assert.assertEquals(firstValue, max);
 	}
 
@@ -49,7 +49,7 @@ public class GenericTestClass {
 	public void secondMaximumFloatValue_SecondtPosition() {
 		FindMax main = new FindMax();
 		Float firstValue = 5.6f, secondValue = 6.5f, thirdValue = 3.5f;
-		Float max = main.checkFloatmax(firstValue, secondValue, thirdValue);
+		Float max = main.checkMax(firstValue, secondValue, thirdValue);
 		Assert.assertEquals(secondValue, max);
 	}
 
@@ -58,7 +58,7 @@ public class GenericTestClass {
 	public void thirdMaximumFloatValue_ThirdPosition() {
 		FindMax main = new FindMax();
 		Float firstValue = 5.6f, secondValue = 6.5f, thirdValue = 7.5f;
-		Float max = main.checkFloatmax(firstValue, secondValue, thirdValue);
+		Float max = main.checkMax(firstValue, secondValue, thirdValue);
 		Assert.assertEquals(thirdValue, max);
 	}
 
@@ -67,7 +67,7 @@ public class GenericTestClass {
 	public void FirstMaximumStringValue_FirstPosition() {
 		FindMax main = new FindMax();
 		String firstValue = "Apple", secondValue = "Peach", thirdValue = "Banana";
-		String max = main.checkStringmax(firstValue, secondValue, thirdValue);
+		String max = main.checkMax(firstValue, secondValue, thirdValue);
 		Assert.assertEquals(firstValue, max);
 	}
 
@@ -76,7 +76,7 @@ public class GenericTestClass {
 	public void secondMaximumStringValue_SecondtPosition() {
 		FindMax main = new FindMax();
 		String firstValue = "Banana", secondValue = "Apple", thirdValue = "Peach";
-		String max = main.checkStringmax(firstValue, secondValue, thirdValue);
+		String max = main.checkMax(firstValue, secondValue, thirdValue);
 		Assert.assertEquals(secondValue, max);
 	}
 
@@ -85,7 +85,7 @@ public class GenericTestClass {
 	public void thirdMaximumStringValue_ThirdPosition() {
 		FindMax main = new FindMax();
 		String firstValue = "Banana", secondValue = "Peach", thirdValue = "Apple";
-		String max = main.checkStringmax(firstValue, secondValue, thirdValue);
+		String max = main.checkMax(firstValue, secondValue, thirdValue);
 		Assert.assertEquals(thirdValue, max);
 	}
 }
